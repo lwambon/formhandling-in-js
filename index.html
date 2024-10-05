@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Handling with JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="contact-method">Preferred Contact Method:</label>
+      <select id="contact-method" name="contact-method" required>
+        <option value="" disabled selected>Select...</option>
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+      </select><br>
+
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms"> I accept terms and conditions
+      </label><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="formSummary" class="form-summary">
+      <h3>Form Summary:</h3>
+      <p id="summary-content"></p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
